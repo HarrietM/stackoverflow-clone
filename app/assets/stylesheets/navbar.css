@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  list-style: none;
+  padding: 1%;
+  margin: 1%;
+  background-color: #cccccc;
+  border-radius: 10px;
+}
