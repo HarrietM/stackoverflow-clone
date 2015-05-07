@@ -9,6 +9,8 @@
 5.times do
   @user = User.create(name: Faker::Name.name, email: Faker::Internet.email, password: Faker::Internet.password)
   5.times do
-    @user.questions << Question.create(content: Faker::Lorem.sentence)
+    question = Question.create(content: Faker::Lorem.sentence)
+    question.answers << Answer.create(content: Faker::Lorem.sentence)
+    @user.questions << question
   end
 end

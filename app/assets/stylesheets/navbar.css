@@ -10,3 +10,22 @@ li {
   background-color: #cccccc;
   border-radius: 10px;
 }
+
+.question, .answer {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 1%;
+  margin: 1%;
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+
+.question > div {
+  margin-right: 2%;
+}
+
+.answer {
+  margin-left: 5%;
+  background-color: #d7e9fa;
+}
